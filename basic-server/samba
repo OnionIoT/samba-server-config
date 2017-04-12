@@ -1,0 +1,16 @@
+config samba
+	option 'name'			'Omega-ABCD'
+	option 'workgroup'		'WORKGROUP'
+	option 'charset'        'UTF-8'
+	option 'description'	'Mobile file server'
+	option 'homes'			'0'
+	option 'interface'      'apcli0'
+
+
+config 'sambashare'
+	option 'name'           'usb'
+	option 'path'			'/tmp/mounts/USB-A1'
+	option 'users'          'root'
+	option 'read_only'      'no'
+	option 'guest_ok'       'no'
+
